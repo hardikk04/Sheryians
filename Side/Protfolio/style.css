@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*::selection {
+  background-color: #000;
+  color: #f6ca70;
+}
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+nav {
+  color: #fff;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5vw;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-bottom: 2px solid #f6e2b9;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+#nav-left {
+  display: flex;
+  gap: 2vw;
+}
+
+#nav-right {
+  display: flex;
+  gap: 2vw;
+}
+
+nav > h3 {
+  font-size: 3vw;
+  font-weight: 300;
+  font-family: "Roashe Personal Use";
+  filter: drop-shadow(0px 0px 5px #f6e2b9);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  cursor: pointer;
+  position: relative;
+}
+nav > h3:hover {
+  text-shadow: 2px 2px 5px #f6e2b9db;
+}
+
+nav > h3::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-bottom: 2px solid #f6e2b9;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+nav > h3:hover::after {
+  width: 100%;
+}
+
+#main-left {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+}
+#main-right {
+  width: 50%;
+  height: 100%;
+  background-image: url("./Artboard\ 1-100.jpg");
+  /* filter: grayscale(1); */
+  filter: brightness(1.8);
+  background-position: start;
+  background-size: cover;
+  position: relative;
+  z-index: -9;
+}
+#overlay {
+  background-color: rgba(0, 0, 0, 0.564);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#main-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+#main-left > h1 {
+  font-size: 4vw;
+  color: #f6e2b9;
+  width: 80%;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+#main-left > h1:nth-child(2) {
+  font-weight: 600;
+  font-size: 9vw;
+  margin-right: 0.5vw;
+}
+
+#main-left > p {
+  font-size: 1vw;
+  width: 80%;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 1.5vw;
+  margin: 2vw 0px;
+}
+
+#btn {
+  width: 80%;
+}
+
+#btn > button {
+  background-color: transparent;
+  border: 1px solid #f6e3bc;
+  color: #fff;
+  font-size: 0.8vw;
+  cursor: pointer;
+  padding: 0.8vw 2.2vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#btn > button:hover {
+  color: #f6e2b9;
+  border: 1px solid #fff;
+}
+
+footer {
+  position: absolute;
+  top: 85%;
+  cursor: pointer;
+  left: 6.5%;
+}
+
+.footer {
+  color: transparent;
+  -webkit-text-stroke: 1px #f6e2b9;
+  /* font-family: "Roashe Personal Use"; */
+  font-family: gilroy;
+  font-size: 4.5vw;
+  margin: 0px 0.5vw;
+  line-height: 1;
+  filter: blur(12px);
+  display: inline-block;
+  letter-spacing: 1vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  position: relative;
+  font-weight: 700;
+}
+
+.footer:hover {
+  /* color: #f6e2b9; */
+  filter: blur(0);
+}
+
+.footer::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  border-bottom: 2px solid #f6e2b9;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+.footer:hover::after {
+  width: 50%;
+}
+
+.footer::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  right: 50%;
+  bottom: 0%;
+  border-bottom: 2px solid #f6e2b9;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+.footer:hover::before {
+  width: 50%;
+}
