@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  background-color: #fcfaf6;
+}
+
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://assets.website-files.com/5f040c8ad0b82a728ec61a1e/5f11465c2ae6bc44354005a7_hero-image-skincare.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1vw;
+  padding-bottom: 8vw;
+  padding-left: 10vw;
+}
+
+nav > img {
+  height: 1vw;
+}
+
+.page1-content > h3 {
+  font-family: gilroy;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.page1-content > h1 {
+  font-family: canela light;
+  margin-top: 1vw;
+  font-size: 5.5vw;
+  width: 50%;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.page2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 10vw;
+  padding-top: 4.5vw;
+}
+
+.page2 > h1 {
+  font-family: canela light;
+  font-weight: 500;
+  font-size: 3vw;
+  margin-bottom: 3vw;
+}
+
+.page2-box {
+  position: relative;
+  width: 100%;
+  /* background-color: salmon; */
+  height: 75vh;
+}
+
+.page2-box-up {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10vw;
+  align-items: center;
+}
+
+.page2-box-up > h3 {
+  font-family: canela light;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.page2-box-up-right {
+  display: flex;
+  gap: 3vw;
+  font-family: gilroy;
+  background-color: #f7f4ee;
+  padding: 1.5vw 2vw;
+  position: relative;
+}
+
+.page2-box-up-right > h3 {
+  font-size: 1vw;
+  font-weight: 500;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.page2-box-up-right > h3:hover {
+  opacity: 0.5;
+}
+
+.page2-box-up-right > h3:nth-child(1) {
+  opacity: 0.5;
+}
+
+.page2-box-up-right > h3:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  background-color: #000;
+  width: 1px;
+  margin-left: 1vw;
+  top: 20%;
+  opacity: 0.5;
+}
+
+.page2-box-down {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin-top: 3vw;
+  padding-right: 10vw;
+  display: flex;
+}
+
+.elem {
+  height: 100%;
+  width: 33.3%;
+  overflow: hidden;
+}
+
+.elem:hover {
+  background-color: #fef6ec;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.page2-box-down .elem:nth-child(1) {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1vw;
+}
+
+.page2-box-down .elem:nth-child(1):hover img {
+  scale: 1.1;
+}
+
+.page2-box-down .elem:nth-child(1) > img {
+  height: 85%;
+  padding-top: 1vw;
+  object-fit: cover;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page2-box-down .elem:nth-child(1) > h3 {
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 0.5vw;
+  opacity: 0.7;
+  font-family: gilroy;
+}
+
+.page2-box-down .elem:nth-child(1) > h1 {
+  font-weight: 600;
+  margin-top: 0.5vw;
+  font-size: 1.3vw;
+  line-height: 1;
+  letter-spacing: 0.1vw;
+  font-family: canela light;
+}
+
+/* end */
+
+.page2-box-down .elem:nth-child(2) {
+  border: 1px solid #000;
+  padding: 1vw;
+}
+
+.page2-box-down .elem:nth-child(2):hover img {
+  scale: 1.1;
+}
+
+.page2-box-down .elem:nth-child(2) > img {
+  height: 85%;
+  padding-top: 1vw;
+  object-fit: cover;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page2-box-down .elem:nth-child(2) > h3 {
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 0.5vw;
+  opacity: 0.7;
+  font-family: gilroy;
+}
+
+.page2-box-down .elem:nth-child(2) > h1 {
+  font-weight: 600;
+  margin-top: 0.5vw;
+  font-size: 1.3vw;
+  line-height: 1;
+  letter-spacing: 0.1vw;
+  font-family: canela light;
+}
+
+.page2-box-down .elem:nth-child(3) {
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1vw;
+}
+
+.page2-box-down .elem:nth-child(3):hover img {
+  scale: 1.1;
+}
+
+.page2-box-down .elem:nth-child(3) > img {
+  height: 85%;
+  padding-top: 1vw;
+  object-fit: cover;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page2-box-down .elem:nth-child(3) > h3 {
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 0.5vw;
+  opacity: 0.7;
+  font-family: gilroy;
+}
+
+.page2-box-down .elem:nth-child(3) > h1 {
+  font-weight: 600;
+  margin-top: 0.5vw;
+  font-size: 1.3vw;
+  line-height: 1;
+  letter-spacing: 0.1vw;
+  font-family: canela light;
+}
+
+.page3 {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page3-left {
+  position: relative;
+}
+
+.page3-left > h1 {
+  font-family: canela light;
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.page3-left > p {
+  font-family: gilroy;
+  font-size: 1vw;
+  width: 68%;
+  margin-top: 0.5vw;
+  line-height: 1.2;
+  opacity: 0.8;
+  margin-bottom: 3vw;
+}
+
+.page3-left > button {
+  background-color: #000;
+  color: #fff;
+  padding: 1vw 1.8vw;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page3-left > button:hover {
+  opacity: 0.8;
+}
+
+.page3-left > button i {
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+.page3-right {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page3-child {
+  height: 50%;
+  width: 50%;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  cursor: pointer;
+}
+
+.page3-child:hover {
+  opacity: 0.8;
+}
+
+.page3-child:nth-child(1) {
+  border-right: 1px solid #000;
+  background-image: url("https://assets.website-files.com/5f040c8ad0b82a728ec61a1e/5f20ea5ac3de55e1de2b1674_img1.jpg");
+}
+
+.page3-child:nth-child(2) {
+  background-image: url("https://assets.website-files.com/5f040c8ad0b82a728ec61a1e/5f20ea7c2711ae005accd97e_img3.jpg");
+}
+
+.page3-child:nth-child(3) {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  background-image: url("https://assets.website-files.com/5f040c8ad0b82a728ec61a1e/5f20ea8c0b51f19c2eeae6ea_img4.jpg");
+}
+
+.page3-child:nth-child(4) {
+  border-top: 1px solid #000;
+  background-image: url("https://assets.website-files.com/5f040c8ad0b82a728ec61a1e/5f20ea6f2711ae9f30ccd97d_img.jpg");
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 1vw;
+  gap: 0.2vw;
+}
+
+footer > i {
+  font-size: 1.2vw;
+  opacity: 0.6;
+}

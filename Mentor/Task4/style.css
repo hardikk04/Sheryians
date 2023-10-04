@@ -1,0 +1,1145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.page1 {
+  position: relative;
+  height: 95vh;
+  width: 100vw;
+}
+
+nav {
+  height: 5vw;
+  width: 100%;
+  position: relative;
+  /* background-color: salmon; */
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: pointer;
+}
+
+.nav-left-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left-btn {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.nav-left-btn > button {
+  padding: 0.4vw 1vw;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.nav-left-btn > button:nth-child(1) {
+  padding: 0.4vw 1vw;
+  background-color: #000;
+  border: 2px solid #c1a362;
+  color: #c1a362;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.nav-left > h3 {
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.nav-left > h3:hover {
+  opacity: 0.8;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1vw;
+  position: relative;
+}
+
+.nav-right-input {
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid #4d4d4d;
+  width: 15vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right-input > h3 {
+  font-weight: 500;
+  opacity: 0.7;
+  padding: 0.5vw 1vw;
+  font-size: 0.9vw;
+}
+
+.nav-right-input > i {
+  padding: 0.5vw 0vw;
+  margin-right: 1vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.nav-right-input > i:hover {
+  background-color: rgba(50, 50, 50, 0.66);
+  border-radius: 10px;
+}
+
+.nav-right > img {
+  height: 2.5vw;
+}
+
+.page1-main {
+  display: flex;
+  height: calc(86% - 5vw);
+  width: 100%;
+  position: relative;
+  padding-top: 2vw;
+}
+
+.page1-main-left {
+  width: 35%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1.5vw;
+  gap: 0.5vw;
+  color: #fff;
+  padding-bottom: 5vw;
+}
+
+.page1-main-left > h1 {
+  font-size: 2vw;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.main-left-para {
+  display: flex;
+  gap: 0.2vw;
+}
+
+.main-left-para > p {
+  font-size: 0.8vw;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-bottom: 0.5vw;
+}
+
+.main-left-btn > button > i {
+  font-size: 1vw;
+}
+
+.main-left-btn > button {
+  padding: 0.5vw 1.5vw;
+  background-color: #d9008d;
+  display: flex;
+  gap: 0.2vw;
+  text-transform: uppercase;
+  align-items: center;
+  border: none;
+  font-size: 0.6vw;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.main-left-btn > button:hover {
+  background-color: #d9008da9;
+}
+
+.page1-main-right {
+  width: 64%;
+  height: 100%;
+  position: relative;
+  background-image: url("https://v3img.voot.com/resizeHigh,w_1920,h_1080/v3Storage/assets/gg-16x9-1696327173507.jpg?imformat=chrome");
+  background-color: #d9008d;
+  background-position: center;
+  background-size: cover;
+}
+
+.page1-main-right::before {
+  content: "";
+  width: 10%;
+  height: 100%;
+  left: -2%;
+  background: linear-gradient(90deg, #000000 22%, rgba(255, 255, 255, 0) 100%);
+  z-index: 9;
+  position: absolute;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #000000 4%, rgba(13, 14, 16, 0) 8.6%),
+    linear-gradient(180.13deg, rgba(13, 14, 16, 0) 62.57%, #000000 100.89%);
+}
+
+.page1-footer {
+  display: flex;
+  padding: 2vw 4vw;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.slider {
+  display: flex;
+  gap: 0.4vw;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 5px;
+  opacity: 0.6;
+  background-color: #fff;
+}
+
+.slider-circle:nth-child(1) {
+  height: 10px;
+  width: 25px;
+  opacity: 1;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.page1-footer-arrow {
+  color: #fff;
+  display: flex;
+  gap: 0.8vw;
+  margin-right: 4vw;
+  cursor: pointer;
+}
+
+.page1-footer-arrow > i {
+  font-size: 1.2vw;
+  border: 1px solid #484747;
+  border-radius: 50px;
+  padding: 0.7vw 0.7vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.page1-footer-arrow > i:hover {
+  background-color: rgba(128, 128, 128, 0.234);
+}
+
+.page2 {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  width: 100vw;
+}
+
+.box1 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+}
+
+.box1-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box1-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box1-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box1-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box1-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box1-elem-box:hover .box1-hover {
+  opacity: 1;
+}
+
+.box1-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box1-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box1-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/comedian-3x4-1695979554806.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/bebaak-3x4-1695989451770.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/birha-the-journey-back-home-3x4-1695989820069.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/mm-golden-border-3x4-1696225444281.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/b-gg-3x4-1696327200702.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/rat-in-the-kitchen-golden-border-3x4-1696174139222.jpg?imformat=chrome");
+}
+.box1-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/munna_ka_bachpan_3x4-1695916643002.jpg?imformat=chrome");
+}
+
+.box2 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 1vw;
+}
+
+.box2-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box2-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box2-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box2-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box2-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box2-elem-box:hover .box2-hover {
+  opacity: 1;
+}
+
+.box2-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box2-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box2-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/battle_of_week-vertical-1696358324307.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/irni_cup_highlights_vertical-1696335247012.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/aakashvani_oct4_vertical-1696371519342.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/player_to_watch_out-vertical-1696359196420.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/irni_cup_best_spells_vertical-1696326512395.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/martinez_performer_of_week-vertical-1696357511635.jpg?imformat=chrome");
+}
+.box2-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/moments_you_cant_miss_tray_final_vertical-1696345649295.jpg?imformat=chrome");
+}
+
+.box3 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 1vw;
+}
+
+.box3-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box3-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box3-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box3-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box3-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box3-elem-box:hover .box3-hover {
+  opacity: 1;
+}
+
+.box3-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box3-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box3-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/udaariyaan_3x4-1695306404190.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/3x4ss-1695985840383.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/3x4-1692266554763.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/neerja_3x4-1695306596707.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/roadies-3x4-1693565966596.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/parineetii_3x4-1695306470980.jpg?imformat=chrome");
+}
+.box3-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/lc_3x4-1696349798075.jpg?imformat=chrome");
+}
+
+.box4 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 5vw;
+}
+
+.box4-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box4-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box4-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box4-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box4-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box4-elem-box:hover .box4-hover {
+  opacity: 1;
+}
+
+.box4-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box4-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box4-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/fast_x_lang_3x4-1695293442238.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/shark-tank-s-15_3x4-(1)-1696048766476.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/mafia-mamma-3x4-1694059308037.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/winning-time_3x4-1695283324939.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/lovers-the-neef-3x4-1694752867888.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/puss-in-boots-the-last-wish-3x4-1685358468713.jpg?imformat=chrome");
+}
+.box4-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/young-love-new-series-3x4-1695367220330.jpg?imformat=chrome");
+}
+
+.box5 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 28vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 5vw;
+}
+
+.box5-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box5-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box5-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box5-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box5-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box5-elem-box:hover .box5-hover {
+  opacity: 1;
+}
+
+.box5-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 4.5);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.page5-overlay {
+  padding: 0.5vw;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  background-color: rgba(0, 0, 0, 0.213);
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.page5-overlay:hover {
+  background-color: rgba(70, 68, 68, 0.213);
+}
+
+.page5-overlay > h3 {
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+
+.box5-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_960,h_540/jioimage/newcpp/651af83c3cd2de705dc4e2ba/651af83c3cd2de705dc4e2ba_1696266306192_aa.jpg?imformat=chrome");
+}
+.box5-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_960,h_540/jioimage/newcpp/651ae182f8d34073d0c3d461/651ae182f8d34073d0c3d461_1696260489502_aa.jpg?imformat=chrome");
+}
+.box5-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_960,h_540/jioimage/newcpp/651af83cd687b70a117d7462/651af83cd687b70a117d7462_1696266303819_aa.jpg?imformat=chrome");
+}
+.box5-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_960,h_540/jioimage/newcpp/public_651ae98a3ad13ae3ebe0e532/651ae98a3ad13ae3ebe0e532_1696262540233_aa.jpg?imformat=chrome");
+}
+.box5-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_960,h_540/jioimage/newcpp/65199128677b85f8c5f01054/65199128677b85f8c5f01054_1696174382784_aa.jpg?imformat=chrome");
+}
+.box5-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/puss-in-boots-the-last-wish-3x4-1685358468713.jpg?imformat=chrome");
+}
+
+.box6 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 2vw;
+}
+
+.box6-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box6-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box6-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box6-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box6-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box6-elem-box:hover .box6-hover {
+  opacity: 1;
+}
+
+.box6-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box6-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box6-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/kyy5-3x4-1695975475441.jpg?imformat=chrome");
+}
+.box6-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/llb-3x4-1695975771642.jpg?imformat=chrome");
+}
+.box6-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/3x4fsf-1696231794561.jpg?imformat=chrome");
+}
+.box6-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/bajao-1695979200004.jpeg?imformat=chrome");
+}
+.box6-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/do-gubare-clean--3x4-1695979165560.jpg?imformat=chrome");
+}
+.box6-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_3x4-1692799134037.jpg?imformat=chrome");
+}
+.box6-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/rafuchakkar-3x4-3-1693639276407.jpg?imformat=chrome");
+}
+
+.box7 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 2vw;
+}
+
+.box7-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box7-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box7-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 97%;
+  border-radius: 15px;
+  position: relative;
+  padding: 0.5vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://v3img.voot.com/resizeMedium,w_1920,h_411/v3Storage/assets/shark-tank-s-15_14x3-1696039288323.jpg?imformat=chrome");
+  display: flex;
+  gap: 0.5vw;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box7-elem-box:hover {
+  filter: brightness(1.1);
+}
+
+.box7-elem-box > img {
+  height: 2vw;
+}
+
+.box8 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 2vw;
+}
+
+.box8-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box8-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box8-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box8-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box8-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box8-elem-box:hover .box8-hover {
+  opacity: 1;
+}
+
+.box8-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box8-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box8-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/taali-3x4-imdb-1693813361112.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/asur2_3x4-1692798747887.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/kaalkoot_3x4(1)-1694066562000.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/apharan-3x4-1694794049661.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/bmtd_3x4-1683712389842.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/inspecto_avinash_3x4-1692799243907.jpg?imformat=chrome");
+}
+.box8-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/rafuchakkar-3x4-3-1693639276407.jpg?imformat=chrome");
+}
+
+.box9 {
+  position: relative;
+  padding-left: 1.5vw;
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0.5vw;
+  margin-top: 2vw;
+}
+
+.box9-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+
+.box9-heading > i {
+  font-size: 1.6vw;
+  padding-right: 1.5vw;
+}
+
+.box9-elem-box {
+  /* overflow: auto; */
+  height: 90%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 0.5vw;
+}
+
+.box9-hover {
+  position: absolute;
+  width: 10%;
+  z-index: 9;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  right: 0%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 96.38%);
+  opacity: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.box9-hover > i {
+  font-size: 2vw;
+  margin-left: 5vw;
+}
+
+.box9-elem-box:hover .box9-hover {
+  opacity: 1;
+}
+
+.box9-elem {
+  border-radius: 10px;
+  height: 100%;
+  width: calc(100% / 7);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  padding: 0.5vw;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  cursor: pointer;
+}
+
+.box9-elem:hover {
+  filter: brightness(1.1);
+}
+
+.box9-elem:nth-child(1) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_top_knocks_vertical-1695826555421.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(2) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_top_knocks_vertical_rohit-1695826634549.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(3) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_best_spells_vertical-1695817383736.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(4) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_top_knocks_vertical_surya-1695561592602.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(5) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_top_knocks_vertical_gill-1695555437344.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(6) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_best_spells_vertical_ash-1695577604733.jpg?imformat=chrome");
+}
+.box9-elem:nth-child(7) {
+  background-image: url("https://v3img.voot.com/resizeMedium,w_810,h_1080/v3Storage/assets/ind_vs_aus_best_spells_vertical_ash-1695577604733.jpg?imformat=chrome");
+}
+
+.page3-footer {
+  width: 100%;
+  height: 35vh;
+  margin-top: 5vw;
+  position: relative;
+  color: #fff;
+}
+
+.footer-up {
+  height: 75%;
+  background-color: #17181a;
+  padding: 1.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-up-left {
+  display: flex;
+  gap: 5vw;
+}
+
+.footer-up-left-part1 > h3 {
+  margin-bottom: 1.5vw;
+  opacity: 0.9;
+}
+
+.footer-up-left-part1 > h5 {
+  margin-bottom: 0.9vw;
+  opacity: 0.8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-up-right {
+  display: flex;
+  gap: 5vw;
+}
+
+.footer-up-right-part1 > h2 {
+  margin-bottom: 1vw;
+  opacity: 0.9;
+}
+
+.footer-up-right-part1-icon {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.footer-up-right-part1-icon > i {
+  font-size: 1.5vw;
+  padding: 0.7vw;
+  border-radius: 50px;
+  background-color: #484747;
+  cursor: pointer;
+}
+
+.footer-up-right-part1-download > img {
+  cursor: pointer;
+}
+
+.footer-down {
+  padding: 1vw 1.5vw;
+  height: calc(35vh - 75%);
+  background-color: #202123;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-down > img {
+  height: 2vw;
+}
+
+.footer-down > p {
+  font-size: 0.8vw;
+  opacity: 0.9;
+}
