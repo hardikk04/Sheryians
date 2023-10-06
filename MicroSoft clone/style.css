@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+#page1 {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+}
+#nav-left > img {
+  height: 2.5vh;
+  width: 6vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vh;
+  padding: 0px 6.5vw;
+}
+#nav-left {
+  display: flex;
+  align-items: end;
+  gap: 1.8vw;
+}
+
+#nav-left > a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.4vh;
+}
+#nav-left > a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+#nav-right {
+  display: flex;
+  align-self: center;
+  margin-top: 7px;
+  gap: 1.8vw;
+}
+
+#nav-right a {
+  font-size: 1.4vh;
+  text-decoration: none;
+  color: #262626;
+}
+#nav-right a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.same {
+  cursor: pointer;
+}
+
+#page1-center {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP5-1920x600");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 14vw;
+}
+
+#page1-center-content > button {
+  font-size: 1.5vh;
+  font-weight: 500;
+  padding: 11px 16px;
+  background-color: #0067b8;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#page1-center-content > button:hover {
+  background-color: #005da4;
+}
+
+#page1-center-content > h1 {
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+#page1-center-content > p {
+  margin: 2vh 0px;
+}
+
+#page1-center-end {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#page1-center-end > i {
+  font-size: 3vh;
+  font-weight: 100;
+  position: relative;
+}
+
+#page1-center-end > .ri-circle-fill {
+  font-size: 1.2vh;
+}
+
+#page1-center-end > .ri-circle-line {
+  font-size: 1.2vh;
+}
+
+#page1-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  gap: 40px;
+}
+
+.page1-end-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page1-end-box > img {
+  height: 4vh;
+  width: 2.2vw;
+}
+
+.page1-end-box > a {
+  font-weight: 500;
+  color: #0067b8;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page2-up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 0px 8vw;
+}
+
+.page2-up-box > img {
+  height: 23vh;
+  width: 20vw;
+}
+
+.page2-up-box > h1 {
+  font-size: 3vh;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.page2-up-box > p {
+  font-size: 1.5vh;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.page2-up-box a {
+  font-weight: 500;
+  color: #0067b8;
+  text-decoration: none;
+}
+
+.page2-up-box a:hover {
+  text-decoration: underline;
+}
+
+.space {
+  font-weight: 500;
+  color: #0067b8;
+  text-decoration: none;
+  font-size: 2.5vh;
+  position: relative;
+}
+
+.adjust-arrow {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+#page2-main > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page2-main {
+  padding: 8vh 8vw;
+  position: relative;
+}
+
+#page2-main-content {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+#page2-main-content > h1 {
+  font-size: 4vh;
+  width: 40%;
+  font-weight: 600;
+  line-height: 4.2vh;
+}
+
+#page2-main-content > p {
+  width: 40%;
+  margin: 20px 0px;
+  line-height: 2.5vh;
+}
+
+#page2-main-content > button {
+  font-size: 1.5vh;
+  font-weight: 500;
+  padding: 11px 16px;
+  background-color: #0067b8;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#page2-main-content > button:hover {
+  background-color: #005da4;
+}
+
+#page2-down > h1 {
+  padding-left: 8vw;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+#page-end {
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 8vw;
+}
+
+#page-end-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#page-end-inner > img {
+  height: 3.5vh;
+  width: 3vh;
+  cursor: pointer;
+}
+
+footer {
+  height: 43vh;
+  width: 100vw;
+  position: relative;
+  background-color: #f2f2f2;
+  color: #616161;
+}
+
+#footer-box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2vw;
+}
+
+.footer1 > h4 {
+  font-weight: 500;
+}
+
+.footer1 > p {
+  color: #616161;
+  font-size: 0.6vw;
+}
+
+.footer1 > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#footer-end p {
+  color: #616161;
+  font-size: 0.6vw;
+}
+
+#footer-end p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footer-end {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 8vw;
+}
+
+#footer-end-left {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+#footer-end-left > i {
+  font-size: 1.4vw;
+}
+#footer-end-right {
+  display: flex;
+  align-items: center;
+  gap: 1.3vw;
+}
+
+@media only screen and (max-width: 1600px) {
+  #page1-center-content {
+    position: relative;
+    left: 20%;
+  }
+  #page1-center-content > p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #page1-center {
+    padding: 0px 0vw;
+  }
+  #page1-center-content > p {
+    width: 60%;
+  }
+  #page1-center-content {
+    position: relative;
+    left: 15%;
+  }
+  #page2-main-content > h1 {
+    font-size: 3vh;
+  }
+
+  #page2-main-content > p {
+    font-size: 2vh;
+  }
+
+  #page2-main-content > button {
+    font-size: 2vh;
+    padding: 10px 8px;
+  }
+  #page2-main-content {
+    top: 25%;
+  }
+  .footer1 > p {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #page1-center-content > p {
+    width: 50%;
+    font-size: 1.5vw;
+  }
+  #page1-center-content {
+    position: relative;
+    left: 15%;
+  }
+
+  #page1-center-content > button {
+    padding: 7px 8px;
+  }
+
+  #page1-end {
+    padding: 0px 8vw;
+    text-align: center;
+  }
+  #page2-main-content > h1 {
+    font-size: 2.5vh;
+  }
+
+  #page2-main-content > p {
+    font-size: 1.5vh;
+    width: 35%;
+  }
+
+  #page2-main-content > button {
+    font-size: 1.8vh;
+    padding: 8px 6px;
+  }
+  #page2-main-content {
+    top: 25%;
+  }
+  .page2-up-box > h1 {
+    font-size: 2.5vh;
+  }
+  .page2-up-box a {
+    font-size: 1.5vw;
+  }
+  .footer1 > h4 {
+    font-size: 1.5vw;
+  }
+  .page1-end-box > a {
+    font-size: 1.5vw;
+  }
+  .footer1 > p {
+    font-size: 1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #nav-left > a {
+    font-size: 1.2vh;
+  }
+  #nav-left > img {
+    height: 2vh;
+  }
+  #nav-right a {
+    font-size: 1.2vh;
+  }
+  #nav-right {
+    margin-top: 0px;
+  }
+  .nav-right-element > i {
+    font-size: 1.2vw;
+  }
+  #page2-main-content > h1 {
+    font-size: 1.8vh;
+    line-height: 2.5vh;
+  }
+  #page2-main-content > p {
+    font-size: 1.2vh;
+    line-height: 2.2vh;
+    margin: 10px 0px;
+  }
+  #page2-main-content > button {
+    font-size: 1.2vh;
+    padding: 8px 10px;
+  }
+}

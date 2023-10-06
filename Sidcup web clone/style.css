@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#nav {
+  height: 140px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 140px;
+  position: fixed;
+  z-index: 999;
+  gap: 50px;
+}
+
+#cursor {
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  background-color: #95c11e;
+  border-radius: 50%;
+  z-index: 99;
+  transition: all linear 0.4s;
+}
+
+#cursor-blur {
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  background-color: #96c11e59;
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  transition: all linear 0.3s;
+}
+
+#nav img {
+  height: 80px;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+#main {
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+
+#page1 h1::before {
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: black;
+  left: -6px;
+  top: -6px;
+  -webkit-text-stroke: 2px #95c11e;
+  z-index: -1;
+}
+
+#page1 h1 {
+  font-size: 110px;
+  font-weight: 900;
+  position: relative;
+}
+
+#page1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#page1 p {
+  font-size: 15px;
+  font-weight: 500;
+  width: 40%;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+#scroller {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  z-index: 99;
+  position: relative;
+}
+
+.scroller-in {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  margin-right: 10px;
+  transition: all linear 0.4s;
+  font-family: "gilroy";
+  color: transparent;
+  -webkit-text-stroke: 2px #95c11e;
+}
+
+#scroller h4:hover {
+  color: #95c11e;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#about-us {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 60vh;
+}
+
+#about-us-left img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 120px;
+}
+
+#about-us-right img {
+  height: 250px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 120px;
+}
+
+#about-us-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#about-us-mid h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#about-us-mid p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  width: 80%;
+}
+
+#card-container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  position: relative;
+  z-index: 99;
+  margin-bottom: 40px;
+}
+
+.card {
+  height: 80%;
+  overflow: hidden;
+  width: 23%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.6s;
+  display: flex;
+  align-items: end;
+  /* padding: 25px; */
+}
+
+.card h1 {
+  font-size: 40px;
+  font-weight: 899;
+  margin: 15px 30px;
+}
+
+#card1 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#card2 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#card3 {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.overlay {
+  background-color: #95c11e;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  flex-direction: column;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+.overlay h4 {
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  color: black;
+  font-size: 18px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover h1 {
+  display: none;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+#green-line {
+  background: linear-gradient(to left bottom, #119e3a, #ace022);
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#green-line h3 {
+  color: black;
+  font-size: 40px;
+  width: 60%;
+  line-height: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#page3-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#page3-left img {
+  height: 600px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+#page3-right {
+  width: 50%;
+  padding: 0px 130px;
+}
+
+#page3-right h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#page3-right p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10px 0px;
+}
+
+#btn {
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  padding: 15px 40px;
+  border: 2px solid #95c11e;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  cursor: pointer;
+  animation-name: btn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+  from {
+    background-color: black;
+    color: white;
+  }
+  to {
+    color: black;
+    background-color: #95c11e;
+  }
+}
+
+#page4 {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#page4 p {
+  font-size: 30px;
+  font-weight: 800;
+  width: 65%;
+  line-height: 55px;
+  text-align: center;
+}
+
+#page4 img {
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+#img-up {
+  bottom: 190px;
+  right: 20px;
+}
+
+#img-down {
+  top: 190px;
+  left: 20px;
+}
+
+#page5 {
+  min-height: 50vh;
+  position: relative;
+  z-index: 999;
+  margin-top: 154px;
+}
+
+#page5-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.page5-card {
+  position: relative;
+  height: 200px;
+  width: 500px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #95c11e;
+  transition: all ease 1s;
+}
+
+.page5-card h1 {
+  font-size: 40px;
+  color: black;
+}
+
+#page5-card1:hover {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+}
+.page5-card:hover h1 {
+  color: white;
+}
+
+#page5-card2:hover {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+}
+#page5-card3:hover {
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+}
+
+#page5-card-container:hover #uni {
+  -webkit-text-stroke: 1px #95c11e;
+}
+
+#uni {
+  font-size: 100px;
+  position: relative;
+  color: black;
+  font-family: gilroy;
+  width: 90%;
+  font-weight: 700;
+  -webkit-text-stroke: 1px white;
+  bottom: 280px;
+  left: 180px;
+  z-index: -9;
+}
+
+#uni:hover {
+  -webkit-text-stroke: 1px #95c11e;
+}
+
+*::selection {
+  background-color: white;
+  color: #95c11e;
+}
+
+/* Footer css not written by me! */
+#footer {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.5vw;
+  padding: 0 100px;
+}
+#footer > img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+#f1 img {
+  height: 100px;
+}
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+  /* background-color: red; */
+}
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+#f4 h4 {
+  font-size: 1vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
