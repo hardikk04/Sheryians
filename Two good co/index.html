@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Good Co</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="page1">
+        <nav>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="nav-right">
+            <h3>shop</h3>
+            <div class="nav-right-inner">
+              <h3>catering</h3>
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <h3>donate</h3>
+            <div class="nav-right-icon">
+              <i class="ri-menu-line"></i>
+              <i class="ri-shopping-cart-line"></i>
+            </div>
+          </div>
+        </nav>
+        <h1>Change</h1>
+        <h1>The course</h1>
+        <div class="video-container">
+          <div class="play">PLAY</div>
+          <video src="./video.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+      <div class="hr-heading">
+        <h3>buy good</h3>
+        <h3>do good</h3>
+      </div>
+      <hr class="hr-line" />
+      <div class="page2">
+        <div id="elem1" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/f445a3d15e318fd217579e88ec2c6d0140246403-3574x4467.jpg/DSC0078_Dexter%20Kim.jpg?rect=448,0,2679,4467&w=640&h=1067&fit=min&auto=format"
+            alt=""
+          />
+          <div class="dets">
+            <div class="dets-up">
+              <i class="ri-circle-fill"></i>
+              <h3 class="light">Shop</h3>
+              <h3>Hoodies</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="dets-down">
+              <div class="dets-down-inner-up">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=320&h=320&auto=format"
+                  alt=""
+                />
+                <h3>TWO GOOD TOTE BAG</h3>
+              </div>
+              <div class="dets-down-inner-down">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/7d180ca25ade6277a215b634318056d551de9da8-5000x5000.png/Website%20Products%20(5).png?w=320&h=320&auto=format"
+                  alt=""
+                />
+                <h3>TWO GOOD CO. HOODIE</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="elem2" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/90d06c39f74f1365c801ec2a063227969c5ef940-2560x3840.jpg/LucyTweed_Photo:KatieKarrs.jpg?rect=129,0,2303,3840&w=640&h=1067&fit=min&auto=format"
+            alt=""
+          />
+          <div class="dets">
+            <div class="dets-up">
+              <i class="ri-circle-fill"></i>
+              <h3 class="light">Shop</h3>
+              <h3>PANTRY</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="dets-down">
+              <div class="dets-down-inner-up">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/ff380ebfee344ff98d24d4156ded6b9dc22a2a2a-5000x5000.png/Change-The-Course-Cookbook-Two-Good-Co.png?w=320&h=320&auto=format"
+                  alt=""
+                />
+                <h3>CHANGE THE COURSE COOKBOOK</h3>
+              </div>
+              <div class="dets-down-inner-down">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/4206e9c3f7ab098369c39a2194b82eeca6bb0664-6166x4111.png/DSC0005_Dexter%20Kim.png?rect=0,4,6166,4104&w=320&h=213&auto=format"
+                  alt=""
+                />
+                <h3>THE COOKBOOK DUO</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="elem3" class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+            alt=""
+          />
+          <div class="dets">
+            <div class="dets-up">
+              <i class="ri-circle-fill"></i>
+              <h3 class="light">Shop</h3>
+              <h3>Bath</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="dets-down">
+              <div class="dets-down-inner-up">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/63474079ab0c7723b75bd63b24d8bbc652349640-1408x1408.png/Cleanse%20&%20Nourish%20Hand%20Wash%20Two%20Good%20Co.png?w=320&h=320&auto=format"
+                  alt=""
+                />
+                <h3>CLEANSE & NOURISH HAND WASH</h3>
+              </div>
+              <div class="dets-down-inner-down">
+                <img
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format"
+                  alt=""
+                />
+                <h3>NOURISH & SOOTHE HAND LOTION</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="page3-up">
+          <div class="page3-up-left">
+            <h1>
+              WE BELIEVE IN PEOPLE, UNTIL THEY BELIEVE IN THEMSELVES AGAIN.
+            </h1>
+          </div>
+          <div class="page3-up-right">
+            <p>
+              Everything we do is designed to rebuild self worth and
+              independence, in order to break free from the cycle of
+              disadvantage.
+            </p>
+            <p>
+              With every purchase you make with us, you're helping to change the
+              course of someone's life; you're walking alongside vulnerable
+              women as they find their way home again.
+            </p>
+            <h3>SHOP TO SUPPORT</h3>
+          </div>
+        </div>
+        <div id="cursor"></div>
+        <div class="page3-down">
+          <div class="child" id="child1">
+            <img
+              src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+              alt=""
+            />
+            <div class="child-details">
+              <h3>THE LOVE + CARE PACK</h3>
+              <p>$50</p>
+            </div>
+          </div>
+          <div class="child" id="child2">
+            <img
+              src="https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=1024&h=1024&auto=format"
+              alt=""
+            />
+            <div class="child-details">
+              <h3>TWO GOOD TOTE BAG</h3>
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="child" id="child3">
+            <img
+              src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format"
+              alt=""
+            />
+            <div class="child-details">
+              <h3>NOURISH & SOOTHE HAND LOTION</h3>
+              <p>$38</p>
+            </div>
+          </div>
+          <div class="child" id="child4">
+            <img
+              src="https://cdn.sanity.io/images/w8f1ak3c/production/02240d01db2e8bdc5c630e9832ff7e0c7614f733-1876x1876.png/Cookbook-Two-Recipes-For-Resilience-Two-Good-Co.png?w=1024&h=1024&auto=format"
+              alt=""
+            />
+            <div class="child-details">
+              <h3>COOKBOOK TWO</h3>
+              <p>$45</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr-heading" id="page4-hr-heading">
+        <h3>WORDS OF GOODNESS</h3>
+        <h3>MESSAGES OF LOVE & SUPPORT</h3>
+      </div>
+      <hr class="hr-line" />
+      <div class="page4">
+        <div class="page4-heading">
+          <div class="page4-heading-child">
+            <i class="ri-circle-line"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+          <div class="page4-heading-child">
+            <i class="ri-circle-line"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+          <div class="page4-heading-child">
+            <i class="ri-circle-fill"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+          <div class="page4-heading-child">
+            <i class="ri-circle-line"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+          <div class="page4-heading-child">
+            <i class="ri-circle-line"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+          <div class="page4-heading-child">
+            <i class="ri-circle-line"></i>
+            <h3>m// 0018 <br />Annabel.</h3>
+          </div>
+        </div>
+        <div class="page4-content">
+          <h1>
+            THANK YOU SO MUCH FOR THE BEAUTIFUL CATERING; IT MEANS A LOT WORKING
+            WITH A COMPANY SUCH AS TWO GOOD CO.
+          </h1>
+          <div class="page4-btn">
+            <button>Send your own message</button>
+            <p>
+              Sometimes it’s the smallest actions <br />
+              that can make the biggest impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page5">
+        <div class="page5-left">
+          <h1>OUR IMPACT.</h1>
+          <p>The thing is, we don't save anyone.</p>
+          <p>
+            What we do is provide a safe space for women to change the course of
+            their own lives.
+          </p>
+          <p>
+            After many years of living in crisis, abuse and complex trauma,
+            restoring self-worth is foundational for independence. We believe
+            that through experiences that promote love and respect, we can spark
+            and nurture a sense of self-worth for those on the path of healing.
+          </p>
+          <h3>HERE'S HOW WE DO IT</h3>
+        </div>
+        <div class="page5-right">
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format"
+            alt=""
+          />
+          <img
+            src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hr-heading" id="page6-hr-heading">
+        <h3>ENTER YOUR EMAIL ADDRESS FOR GOOD</h3>
+        <i class="ri-arrow-right-line"></i>
+      </div>
+      <hr class="hr-line" />
+      <div class="page6">
+        <div class="page6-footer-up">
+          <div class="footer-left">
+            <p>CONNECT WITH US</p>
+            <h3>Facebook</h3>
+            <h3>YouTube</h3>
+            <h3>LinkedIn</h3>
+            <h3>Twitter</h3>
+            <h3>Instagram</h3>
+          </div>
+          <div class="footer-middle">
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxMHExYUExUXFxYYGRgZGhcZGhkgIR0iIBkZHxwcHB0gHyoiHx8oIx8iIzQnKisuMTExHyM2OzYvOiowMS4BCwsLBQUFDwUFDy4aFBouLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABgcIBQQDAgH/xABNEAACAQIDBAUFCwgIBgMAAAABAgMAEQQFBgcSIUExUWFxgRMUIpGhCBUjMmJygpKiscEWFzVCQ1JzsjRTVLPC0dPwJDNjdIOT0uHx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALmpSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApWM70vQbMpWM70vQbMpUG0ZlgzrIIsOf2uHdO4nesfA2PhWcJYzExVhYgkEHkR0ig2RSqT9zdme7JisMT8ZUlUfNO6/8AMvqq55ZBECzGwAJJ6gOmg+tKyHn+ZHN8RPiDe8sjv3bzEgeA4VP/AHO2bea42WAnhNFcfOjNx9ktQX7SlZQ17mnv1mGKmvcNKwU/JX0U+yooNX0rNexTKffXNISRdYQ0x+jwT7bL6qu/XWs4NGw+Ul9J2uI4gfSY/go5n/8AKCS1ysTqbBYM7smKwyHqeaNT6i1Zw1ZtAx2qGPlZSkZ6IUJVLdovdvpXqL0Gv8Dm+HzL/kzRS/w5Fb+UmvbWN4ZWgIZSVI4gg2I7jVj6F2w4nJ2WPGFsRDwG8eMiDrDfr9zce2g0DSvHluOjzSNJYnDowDKy9BH+fZyr2UClKUClKUClKUFYfmFy/wDr8V9aL/SqqdpOnItKY18PCzsiqjAuVJ9JbnoAHsrUtZv28fpaX+HD/IKCJ6fwS5niYIXJCyzRRkjpAZ1UkcOnjV2/mFy/+vxX1ov9KqZ0Z/T8H/3MH96ta1oObp3J0yHDx4eMsyRLuqXtc8SeNgBz6qzltbyj3mzPEKBZZG8qvc/pH7W8PCtP1TPuksp/o2KA/ehY/bT/AB0EJ2PZp715rhyT6MhMTdu+CF+3u1eO1bNvefK8S4NmdPJL3yHcNu4EnwrMuCxLYORJF+MjK6ntUgj7qt/3QGoVxmGwUSH0Zh5wfm7gCevfb1UFM129DZt7yY/DTXsElXePyW9F/sk1zstwEmZP5OMXbdke3YiM7exTXloNZ6zzT3lwWInvYpE5X5xFk+0RWTKubaNqn3w0/hDvXfEeTV+3yQPlD9dRVM0F1+59wSZbhcXjpfRW+7vHkkal3Pd6Q+rVX6x1HJqrFSYiS/pGyL+6g+Ko/wB9JJq3s8wh0xpjyY4O0Ue93yyKzg+DFaoag7ujNLTatxAghsOG88h6EXmx6+oDmfWLxyjY9leAQCSJp3txd3cepUIUD/d653ud8uXD4GSa3pyzEE/JRQFHrLeurPoKn1nsVw86NJgLxyAEiJmLI/YCxup8SO7pFIzxNh2KsCrKSCDwII4EEcjWxqzftzy1cuzSQqLCZElIHWbqx8ShPjQdjYDqxsFOcDI3wc12jv8AqyAXIHYyg+IHXV8VkXS+LOAxeHkHSk0TepxWuqBSlKBSlKBSlKBWb9vH6Wl/hw/yCtIVm/bx+lpf4cP8goI1oz+n4P8A7mD+9Wta1krRn9Pwf/cwf3q1rWgVEdreUe/OWYhQLtGvlV709I/Z3h41Lq+csYlBVhcEEEHmD0igxvXSzrOHzcQB/wBjAkK9yliPvr+ajyw5LiZ8Of2Ujp3gMbHxFjXOoLS9z1kox2KnndbrFFuC/XJw/lVh9Kq/1HlZyTEz4c/spHTjzAPonxFjV9bCco97ctWQizTu0p7viL7Fv9Kq890Dk/mOYLOB6M8YJPyk9Fvs7nroIPi82fFYeDDt8WFpmX/ybhPtX216NFZT7+Y7DwWuHkXeHyR6T/ZBrjVaXudcp86xcuII4Qx7o+dIbA/VVh40FmbXMAcwynFKo4qiyDujdXb7INZhrY8sQmUqwuCCCDzB6RWYNoukJNIYpoyD5FiWhfrW/Rf95eg+vnQWd7nXN1nws2FJ9OOTygHWjgDh3Mpv84Va1ZG09ns2nJlngfddfURzVhzBq4Mp284aRB5zh5kfn5LcdT3bzKR3caC2azRtmzhc5zSUobrEFhBHMrfe+2zDwqS6x22vmKNFgY2hDAgyuRvgfJVbhT23Ph01UpN6Dr6PwBzTG4aJRffmjB7t4Fj4AE1rWqY2BaNZCcwmWwsUgB534PJ3W9Edd27KuegUpSgUpSgUpSgVQ+2LSeOzfMpJYMNLIhSMB0UkXCi/Gr4qOar1xgtKj/iJfTtcRIN5z9Hl3tYUFF6U0PmOFxuGd8JMqJPCzMUNgBIpJPZatL1TOY7fhe0GEuOTSSWP1VX8a+OG2/yKfhMGhHyZSD7VNBdlKg+lNq2X6iYR7xglPAJLYAnqVwd0+NieqpxQUbto0PisfmBnwsEkqyxoXKLezr6JB+iFNQqLZ7mbkDzOcXIFyhsO09lanr4YnEJhVLyMqIouzMQAB1kngKD5ZTgVyyGKFPixIkY7lUD8KhO3DTMmocHG0MbSTRSghVFyVYbrADv3T4V5dRbbcFlxKwI+IYfrD0E8GIufq2qNnb9PfhhI7dXlGv6938KCC/m+zT+xT/UNXfsV05Jp7AfDIUllkZ2VhYgCyqD6t76VcnIdumExhC4mGSAn9YHyijvsA3qU1Y+X46LMo1khkWRG4h1IIPiKD1VydSaeg1NCYcQm8p4g9DKeRU8iK61KDPGrdjmNydi2HHnMXLc4SD5yc/o37hUExeWzYI7skUiHqdGU+oitRaq1pg9KC+IlAYi6xr6Tt3KOgdpsKrrM9voBth8ISOTSyWP1VB/moKuyvTOMzcgQ4eaS/MI1vFrWHiatDQuxQoyzZiRYWIw6G9/4jDhbsX18q+eD2/OD8Lg1I60lII8Cpv66nmktpGA1UQkTmOU/spQFY/N4lW8DfsoJRDEIVCqAFAAAAsAB0ADqr7Urjavz9dL4WTFOjOse5dVIBO86pwv869B2aVU35/sN/ZZvrJX9G33C/wBln+sn+dBbFKrPB7dMumNnjxEfaURh9l7+ypnp/VGE1GL4aZJLcSoNmHehsw9VB2aUpQQLa1r38koRHCQcTKDuX/Zr0FyOZ5Add+qxzvisS+MdnkYu7ElmY3JPWSa7m0TOTn+YYiYm6+UZE7EQ7q91wL95NNnenPyqx0UBuE4vIRyReLeJ4L9Kg8WS6axefX82gklA4FlX0R2Fj6I9dejONFZhkiF58NKiDpa28o+cykgeNakwGCjy6NY4kVI1FlRRYAV92UNwPRQY2q8dhersVmIOFnSSSNB6GIsSEt+zduj5vPl1WkP5pMtbEtiGjJDEEQ3tGDzIUcbfJvbstUzwuGTCIEjRURRYKoAAHYBwFB/MZikwMbySMFRFLMx6AALkms3bSNfy6xlKqSmGU/Bxdfy362PVy5cybJ90LnpwGEjwyGxxDkt8yOxI8WK+o1QdB9YYWnYKoLMTYKBck9QHOpCmzrNXTfGDmt02IAb6pO97Kt/YtouPJcMmKdQcRMocMR8RG+Kq9VxxJ7bcqsegx1isM+DcpIjIy8CrAqR3g8RXe0NrSfR0weMkxMR5SEn0XH4N1N+HCry2paJTVWGdlQecxKWicDibcfJnrB5dR8b5ooNe5JmkedQRzxNvRyKGU/eD2g3B7RUU2r69GkIgkdjiZQdwHiEXoMjDn1Acz3EVFvc554XE+DY3C2ljHVc7r+F90+JqtdfZ6dRY6ecm6lysfYi+insF+8mg5GOxkmYSNJK7O7m7MxuSe017Ml05is9J82gklt0lVNh3t0D110NnemfyrxscBuI+LyEdIRem3aTZfpVp3LsBFlkaxRIqRqLKqiwH++ugyznOjsdkg358NLGn75W6jvZbgVx0YobjgRxBrYksYlBVgCCCCCLgjqIrOu2XRqaWxKvCu7BOGZV5IwtvoOziCO+3KgnGxraQ+cEYLFtvSgfBSHpcAcUbrcDjfmL8xxkW239DYr/w/wB/FWccvxj5dKksZ3XjZXU9RU3FaC2pY9c20/JOvRLHhpAOrelhNvbQZ0rpYHIMVmKeUhw00iXI344nYXFri6i1c2tEe5//AEWP40v+Ggz9jMHJgm3ZEdG/ddSp9Rr9YLGSZe6yROyOpurqSCD2GtZ51k0GexmLERrIh5MOjtU9KntFZi15pw6WxsuHuSoIaNj0lGF1v2joPaDQXfsl2gflfGYprDExAFrcA68BvgcjfgR2g87BVI7P85OQ4/DzA2AkVX7UY7r+w37wKUHClBBN+m5v386s/wBzgB59OT0+bm3/ALI7/hUT2lZGcgzHEREWUuZI+1HJZbd1yvepr67LdSLpjHxyyG0TAxyHqVrce4MFJ7qDUNY9nxkm83pv0n9Y9da8hlEoDKQVIBBBuCD0EHqqItskydjc4Xp/60/+pQZt88k/rH+sf86eeSf1j/WP+dT/AGy5Plun3jw+CjCyi7TESSNui3ood5iATxPX0ddQLL8G+PlSJBd5GVFHWWIA++gmu1EN5tlG9c3wanj27p+61QKr026aXtl2HkiFxhLRn5jKq38GVfWaoug2DlW75GLc+L5NN3u3RavXVdbGNax53hY8LI4GIhUJuk8XReCsvXYWB7r86sWgVj7N93y8u58Xyj7vdvG1aM2pa1j0rhnVWBxMqlYkB4i9x5Q9QHtPDrtmigsHYLve+Eu50+bTfelvbaq+q6fc55EyCfGMLBrRRnrsd5z3X3R4Gq119kTadx08BFlDlk7Ub0k9ht3g0E29zfu+d4j97yAt3eUXe/Cr3rK+zrU35J41Jzcx8UkA6SjdNu0EBvo1p7L8dHmUayQurxsLq6m4NB6qqr3R+75nh/3vL8O7ybX/AAq0JZBECzEAAEkk2AHWTWdds2sk1TiVSFt6CAMqtydjbfcdnAAd1+dBAqvHOL/kkt+nyUHq85S3stVL5fgnzGVIoxvPIyoo6yxsK0FtSwC5Tp+SBeiKPDRg9e7LCL+ygzpWiPc//osfxpf8NZ3rRHuf/wBFj+NL/hoLErP3uire+MVunzZL/wDtmq7c+z/D6ejMuIlWNQOFzxbsVelj3VmTXOom1VjJcQRuqxART+qiiyjv5ntJoOIl7i3TfhSpBs8yVs+zDDxAXHlFd+xEO8/sFu8ilBd+1jQn5XQh4rDExA7l+G+vSYyfaDyPeTWdcXhXwTtHIrI6mzKwsQeoiti1HNV6HwWqh/xEfpgWEqHdcfS5jsa4oM/aa2hZhptQkMxMY6I5AHUfNvxXuBFdHNNr2aZgpQSrEDwJiQKfrG5Hhaphj9gKEkw4xlHISRBj9ZWH3V8sPsAN/Txot8mH8TJQVBNKZmLMSWJJJJuST0kmrh2I7P3hdcwxKFbD4BGHE3H/ADSOQtwXvv1Xl2l9lGX6fYPuNPIOIeYggHrVAAvrBPbU4oPPjMKmNjeORQyOpVlPQQRYg1m/aRs/l0hIWUF8Mx+Dl/d+Q/U3bz9YGmK+GJgTEqUkVWRhZlYAgjqIPA0GP4ZWgYMjFWHEMDYjtBFSBNoeaIm4MZPbouWufrfG9tW7qDYngcyJeBnwzHktnT6rcR4Nao2dgE1+GMjt1+Sa/q3vxoKnxWJfFsXkdnduJZiST3k8TUh0LoqfWUwSMFYlI8pKR6KjqHWx5D8KtTIdheDwRDYmWTEEfqgeTQ94BLfaFWPgMFFlqLHCioi8AqAADwFB8slyuLJYY4Il3Y41CqPvJ6yTxJ6zUU2raCGsYg8VhiYgdwngHHSY2PtB5HvNTqlBjvH4KTLpGjlRkdTZkYWIPaK9mTaixWRE+bzyxX6QrEA969BrTOqNG4PVS2xMQZgLLIvouvcw427DcVXeZbAlYkwYsgclkjBP1lI/loKxzjV+OztdyfEyyJ+6Wsp71Fga46IXIAFyeAA51cGC2Atf4XGC3UkRufEtw9VTzSWznAaWIaKMvKP2stmYfN4bq+ABoIrsa2btkxGNxa2mI+CjPTGCOLt1ORwtyBN+J4SLbb+hsV/4f7+KprXI1VkKamw0mGkZlSTcuyWuN11YWuCOlaDJVe7C5viMGu5HPKiXvupIyj1A2q7PzCYH+0Yn1x//AAr+/mEwP9fifXF/p0FETTNOd52LE82JJ9Zr7ZdgJMzkWKJGkkY2VFFyf/qr7wew/LMObscRJ2NIoH2FU+2plkWnMLp9d3DQJGD0lR6R+cx9I+JoIzsp0ANHxGSWzYmUDfI4hF6dxTz6yeZt1Uqd0oPFmuYR5VE8szhEQXZjyH4ns51RutNs+JzJmjwV4IegPYeUbtv0J4ce2v1t71W2YYnzKNvgobFwP1pCL8fmg27y1VmilzYC5PACg++NzGbMDvSyySHrd2Y+01+8vzbEZYd6CaSI9aOy/caszSmw+THosmMlMO8LiJAC4+cx4Keyx8OiuhnOwRNwnC4lt8dCyqLHs3ltu+o0Ha2H6rxWpYpxiZPKGJowrWAazB77xHT0DtqXas1Rh9KQmWdrDoVBxZz+6o/HoFQHYhgJNLjMUxSmIxGJn3ugKFlO8DzWwvcVVuu9VSauxTzOSEBKxJyRL8B3npJ66Dvaq2vY/OmKwv5tFyWM+n9KT41/m2qEYjHS4s70kjuetmYn1k17dNaen1NOsEC7zHiSeCqvNmPID/d6uLLNg2EjUeXxE7vbiY9xF8AVY+2gp7KdTYzJyDBiZY7cg7bvip9E+Iq1dB7afOGWHMQqk2AnUWF/+ovL5w4dg6a5Gudi8mURtPg5GmRAS0Tgb4A6SpHBu6wPfVV0GyEcOAQbg8QRzr6VUGwPWLYoNl8zXKLvwEnjuj40fh0jsvyAq36BSlKBSlKBSlKBSlKBSlKBSlKBSlKDH+cY05lPLM3TJI7n6TE/jUx2GZOua5mrOLrAjTWP7wKqvqLb30ahWYYU4GWSJumN2Q96sQfuqebAszXA5kY2NvLRPGvzgVcD1KRQaIpSlBB9tWN8wyucrwaUxxX52L3I7rbw8TWa60jtywhxOUykcfJvE57t4Kf5r1m6gv8A9z3ky4TAviLenPIwv8lPRA+tvGrNqudgOYri8t8kD6UMrqR2Md9T3G5H0TVjUCsv7VsmXI8zxEaCyMRIo6t9QxA7AxI7q1BWZdsuZLmWazlDdY92K/aigN6muPCg5uzvHnLcywkgNvhkU9zncb2Ma1ZWT9CYQ47MMIg5zxE9yuGY+oGtYUClKUClKUClKUClKUClKUClKUClKUGeNuel2yfGnEKvwWIO9fkJP1we/wCN4nqqAYadsK6ujFXUhlYcCCDcEdtay1DkUOo4XgnXeRvWDyZTyIrP+s9luN00xaNGng5SRgkgfLQcV7+jtoJtpPblE6BMfG6yAWMsQBVu1luCp7rjuro5ztxwGFQ+QSWaTkCu4v0mPH1A1QBFq/aIZDYC5PQBQXrsqzeXXyZj5428sojj3BwVEZZRuoOXT09N+NU5qjIpdN4iTDyj0kPA8mX9Vh2EVcmwDJMRlMWJaeJ4hI0RTfXdLBQ9zY8bcRUp17obD6ziCv6EqA+TlA4r2MP1l7PVQUBoTWE2jp/KxjeRhuyRk2DDv5MOR7+s1d2W7YsqxqBnmaFuaSRuSPFFZT66pPVWgsdpdj5aEtGOiaMFkI6yR8XuaxqNUF3a321wrG0eXbzyMCPLspVVvzRW9It3gDvqlHcuSSbk8STzr9YeB8SwSNWdj0KoJJ7gONWboPY1PmTLLjwYYuB8l+0fsP8AVjv9LsHTQe33P2k2kkbMJFsqhkhvzY8HcdgF172PVXe1Ttsw+TzNFDA0+4SrPvhFuOnd9Ft63XwqxIMGmFiEUQEaKu6gUWCi1hburJudZXLk00kEylZI2IIP3jrB6QeYoNNaI1lBrKIyQ3VlIEkbW3kJ6OjpB42PYakdUz7nPKJojicQQREyrGt+h2BJJHWF6L/Kq5qBSlKBSlKBSlKBSlKBSlKBSlKBSlKDn43I8NjzeWCGQ9bxox9or9YHJ8PgOMUEUfzI0X7hXupQKUpQfyuXitNYLFnekwuHc9bQxk+srXVpQeTA5bDlwtDFHGOpEVf5RXrpSgV4MwybD5oQZ4IpSvQZI0e3dvA2r30oPlDGIQFUAACwAFgOwCvrSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlB//9k="
+              alt=""
+            />
+            <div class="footer-middle-inner">
+              <p>© TWO GOOD CO. 2023</p>
+              <p>TERMS OF USE</p>
+              <p>PRIVACY POLICY</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p>THE NITTY GRITTIES</p>
+            <h3>Good Things FAQs</h3>
+            <h3>Good Food FAQs</h3>
+            <h3>Good Places</h3>
+            <h3>Pathways</h3>
+            <h3>Careers</h3>
+          </div>
+        </div>
+        <h3>
+          We are proud and privileged to have our home on this land, and to be
+          able to continue the long tradition of community coming together
+          around food, begun thousands of years ago by First Nations peoples. As
+          we stand together on this unceded land, we acknowledge our First
+          Nations people, are the original custodians of this land, and we
+          recognise their deep connection to land, water, sky and community
+          which continues today. We pay our deep respects to community elders,
+          past, present and emerging, for they hold the memories, the
+          traditions, the culture and hopes of Aboriginal and Torres Strait
+          Islander peoples. Always was, always will be Aboriginal land.
+        </h3>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
