@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  perspective: 500px;
+}
+
+.sidebar {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  padding-top: 5vw;
+  padding-left: 2vw;
+}
+
+.sidebar > h1 > i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.sidebar > a {
+  margin-top: 1vw;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: #000000b3;
+}
+
+.sidebar > a:hover {
+  color: #000;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #dadada;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+nav {
+  padding: 2vw;
+}
+nav i {
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.main-text {
+  text-align: center;
+  margin-top: 3.5vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-text > h1 {
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.main-text > p {
+  font-size: 1.5vw;
+  font-weight: 600;
+  opacity: 0.5;
+  width: 60%;
+  margin-top: 1vw;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.5vw;
+  padding: 0 2vw;
+}
+
+.elem {
+  position: relative;
+  height: 20vw;
+  width: 15%;
+  background-color: #ededed;
+  border-radius: 8px;
+  padding: 0.3vw;
+}
+
+.elem > img {
+  height: 70%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.elem > h5 {
+  font-size: 0.9vw;
+  margin-top: 1vw;
+}
+
+.elem > h1 {
+  font-size: 1.2vw;
+}

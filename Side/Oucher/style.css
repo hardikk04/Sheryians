@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+}
+
+.page1 {
+  position: relative;
+  padding: 1vw 2vw;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffffa2;
+}
+
+nav h3 {
+  font-weight: 300;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+}
+
+.nav-left {
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+}
+
+.nav-left-logo {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  height: 4vh;
+  width: 4vh;
+  position: relative;
+  background-color: #00cba0;
+  border-radius: 50%;
+  margin-bottom: 1vw;
+}
+
+.minicircle {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.minicircle::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background-color: #000;
+  bottom: -38%;
+  right: -55%;
+}
+
+.nav-left-part2 {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.nav-right i {
+  padding: 0.5vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.page1-main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 70vh;
+}
+
+.page1-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* background-color: salmon; */
+  padding: 2vw 0;
+}
+
+.page1-left h1 {
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.page1-left h1:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
+
+.page1-left h1 > span {
+  display: flex;
+  margin-left: 1.2vw;
+}
+
+.page1-left h1 > span > img {
+  height: 11vh;
+  width: 11vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #000;
+  margin-left: -1vw;
+}
+
+.page1-left-down {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-top: 3vw;
+  border-top: 1px solid #ffffffa2;
+  padding: 1vw 0;
+}
+
+.page1-left-down h3 {
+  font-weight: 500;
+}
+
+.page1-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 2vw 0;
+  padding-left: 6vw;
+}
+
+.page1-right-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-photo/female-model-trendy-yellow-jacket-posing-indoor-photo-pleased-brunette-woman-with-dark-hair-posing_197531-9367.jpg");
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vw;
+  position: relative;
+}
+
+.page1-right-img::after {
+  content: "";
+  position: absolute;
+  top: -2%;
+  right: -5%;
+  background-color: #000;
+  width: 20%;
+  height: 8%;
+  border-radius: 2vw;
+}
+
+.page1-right-img h3 {
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 1;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #000;
+  padding: 0.3vw 2vw;
+  padding-right: 1vw;
+  border-radius: 4vw;
+  align-items: center;
+}
+
+.book h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.1vw;
+}
+
+.book i {
+  padding: 1vw;
+  font-size: 1.3vw;
+  background-color: #000;
+  border-radius: 5vw;
+}
